@@ -1,6 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 
-<polymer-element name="personaltrainer"  constructor="PersonaltrainerElement" attributes="">
+<polymer-element name="personal-trainer"  constructor="PersonaltrainerElement" attributes="">
   <template>
     <style>
       /* styles for the custom element itself - lowest specificity */
@@ -13,9 +13,11 @@
     <span>I'm <b>personaltrainer</b>. This is my Shadow DOM.</span>
   </template>
   <script>
-    Polymer('personaltrainer', {
+    Polymer('personal-trainer', {
       // element is fully prepared
-      ready: function(){ },
+      ready: function(){ 
+        console.log("more push-ups, lazy");
+      },
       // instance of the element is created
       created: function() { },
       // instance was inserted into the document
